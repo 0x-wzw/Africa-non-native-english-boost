@@ -179,6 +179,12 @@ const AdminDashboard = () => {
                 Add User
               </Link>
             </Button>
+            <Button variant="outline" asChild>
+              <Link to="/admin/content">
+                <BookOpen className="h-4 w-4 mr-2" />
+                Content Management
+              </Link>
+            </Button>
             <Button variant="cta" asChild>
               <Link to="/admin/courses/new">
                 <BookOpen className="h-4 w-4 mr-2" />
