@@ -2,39 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* EduNiger - English Learning Platform Design System
+All colors MUST be HSL for consistent theming
 */
 
 @layer base {
   :root {
+    /* Core brand colors inspired by Nigerian culture and education */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 220 13% 18%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 13% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 13% 18%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Educational blue for trust and learning */
+    --primary: 210 100% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 210 100% 50%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Warm accent reflecting Nigerian warmth */
+    --secondary: 25 95% 95%;
+    --secondary-foreground: 220 13% 18%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Success: Learning achievement green */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Warning: Progress alerts */
+    --warning: 45 93% 47%;
+    --warning-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --muted: 210 40% 98%;
+    --muted-foreground: 215 16% 47%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --accent: 25 95% 95%;
+    --accent-foreground: 220 13% 18%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 210 100% 56%;
+
+    /* Educational gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 56%), hsl(225 73% 57%));
+    --gradient-warm: linear-gradient(135deg, hsl(25 95% 95%), hsl(45 100% 96%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 100% 56%) 0%, hsl(225 73% 57%) 50%, hsl(240 56% 52%) 100%);
+    
+    /* Progress indicators */
+    --progress-bg: hsl(220 13% 91%);
+    --progress-fill: hsl(210 100% 56%);
+    
+    /* Interactive states */
+    --hover-overlay: hsl(210 100% 56% / 0.1);
+    --active-overlay: hsl(210 100% 56% / 0.2);
+
+    /* Shadows for depth */
+    --shadow-sm: 0 1px 2px hsl(220 13% 18% / 0.05);
+    --shadow-md: 0 4px 6px hsl(220 13% 18% / 0.1);
+    --shadow-lg: 0 10px 15px hsl(220 13% 18% / 0.1);
+    --shadow-xl: 0 20px 25px hsl(220 13% 18% / 0.1);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease-out;
 
     --radius: 0.5rem;
 
